@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Please GoFundMe for YUKON DENALI — Urgent Need!!!</title>
+
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				margin: 0;
+				font-family: Arial, sans-serif;
+				background: #f7f7f7;
+				color: #222;
+			}
+
+			.top {
+				background: white;
+				border-bottom: 1px solid #ddd;
+				padding: 16px 22px;
+				font-size: 21px;
+				font-weight: bold;
+			}
+
+			.container {
+				max-width: 700px;
+				margin: 30px auto;
+				padding: 0 18px 50px;
+			}
+
+			.hero {
+				height: 230px;
+				border-radius: 15px;
+				background: linear-gradient(135deg, #dff7ef, #eefaf6);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 75px;
+				margin-bottom: 25px;
+			}
+
+			h1 {
+				font-size: 30px;
+				line-height: 1.15;
+			}
+
+			.urgent {
+				color: #d21f3c;
+			}
+
+			.story {
+				color: #555;
+				line-height: 1.6;
+				font-size: 16px;
+			}
+
+			.card {
+				background: white;
+				border: 1px solid #ddd;
+				border-radius: 15px;
+				padding: 22px;
+				margin-top: 25px;
+				box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+			}
+
+			.amount {
+				font-size: 29px;
+				font-weight: bold;
+			}
+
+			.goal {
+				color: #777;
+				margin-top: 5px;
+			}
+
+			.bar {
+				height: 12px;
+				background: #e5e5e5;
+				border-radius: 20px;
+				overflow: hidden;
+				margin: 17px 0 10px;
+			}
+
+			.fill {
+				width: 37%;
+				height: 100%;
+				background: #16a085;
+			}
+
+			.stats {
+				color: #666;
+				font-size: 14px;
+			}
+
+			button {
+				width: 100%;
+				margin-top: 20px;
+				padding: 16px;
+				border: none;
+				border-radius: 9px;
+				background: #02a95c;
+				color: white;
+				font-size: 17px;
+				font-weight: bold;
+			}
+
+			/* PRANK SCREEN */
+
+			#prank {
+				display: none;
+				position: fixed;
+				inset: 0;
+				z-index: 100;
+				background: #111;
+				color: white;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				padding: 20px;
+			}
+
+			#prank.show {
+				display: flex;
+				animation: flash 0.25s linear 3;
+			}
+
+			.reveal h2 {
+				font-size: clamp(48px, 13vw, 110px);
+				line-height: 0.9;
+				margin: 0;
+				color: #ffdf00;
+				text-shadow: 5px 5px 0 #e21b23;
+				transform: rotate(-3deg);
+			}
+
+			.middle {
+				font-size: clamp(90px, 25vw, 220px);
+				margin: 10px 0;
+				animation: bounce 0.55s infinite alternate;
+			}
+
+			.reveal p {
+				font-size: 21px;
+				font-weight: bold;
+			}
+
+			@keyframes bounce {
+				from {
+					transform: scale(1) rotate(-7deg);
+				}
+
+				to {
+					transform: scale(1.15) rotate(7deg);
+				}
+			}
+
+			@keyframes flash {
+				0%,
+				100% {
+					background: #111;
+				}
+
+				50% {
+					background: #e21b23;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="top">Fundraiser ❤️</div>
+
+		<div class="container">
+			<div class="hero">🥺💸</div>
+
+			<h1>
+				Please GoFundMe for YUKON DENALI
+				<br />
+				<span class="urgent">URGENT NEED!!!</span>
+			</h1>
+
+			<div class="story">
+				<p>
+					<strong>
+						I never thought I would have to ask for help like this...
+					</strong>
+				</p>
+
+				<p>
+					This is an extremely urgent situation and every little bit of support
+					helps. Even sharing this fundraiser would mean the world. ❤️
+				</p>
+
+				<p>Thank you so much for your kindness and generosity.</p>
+			</div>
+
+			<div class="card">
+				<div class="amount">$3,742 raised</div>
+
+				<div class="goal">of $10,000 goal</div>
+
+				<div class="bar">
+					<div class="fill"></div>
+				</div>
+
+				<div class="stats">137 people have donated</div>
+
+				<button>Donate now</button>
+			</div>
+		</div>
+
+		<!-- PRANK REVEAL -->
+
+		<div id="prank">
+			<div class="reveal">
+				<div class="middle">🖕</div>
+
+				<h2>
+					YOU'VE<br />
+					BEEN FOOLED
+				</h2>
+
+				<p>😂 You really thought I needed $10,000?</p>
+
+				<p>THANK YOU FOR YOUR DONATION OF ONE WHOLE CLICK.</p>
+			</div>
+		</div>
+
+		<script>
+			// Automatically reveal the prank after 3 seconds
+
+			setTimeout(function () {
+				document.getElementById("prank").classList.add("show");
+			}, 3000);
+		</script>
+	</body>
+</html>
